@@ -363,7 +363,7 @@ body{
 }
 
 .container-content{
-    width: 90%;
+    width: 80%;
     height: 350px;
     background-image: linear-gradient(145deg ,rgba(244 , 129 , 63,1) 0% , rgba(241 , 85 , 106 , 1)100%);
     margin: auto;
@@ -371,10 +371,16 @@ body{
     text-align: end;
     border-radius: 5px;
     display: flex;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
     flex-direction: column;
     position: relative;
+    transition: 0.2s ease-in;
 
+}
+
+.container-content:hover{
+    transform: translateY(-14px);
 }
 
 .img-client{
@@ -395,4 +401,163 @@ body{
     justify-content: center;
     padding: 0px;
     margin: 12px 0px;
+}
+
+.rating .stars{
+    font-size: 14px;
+    margin: 0px 2px;
+
+}
+
+.client-name{
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.para-client{
+    color: rgba(255, 255, 255, 0.877);
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 26px 0px 15px 0px;
+    text-align: center;
+}
+
+.profession{
+    color: #fff ;
+    font-weight: 00;
+    font-size: 14px;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.carousel-indicators button{
+    background-color: rgb(255, 129, 57);
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: -68px !important;
+}
+
+/* Testimonial Section finished */
+
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-contact{
+    font-size: 34px;
+    color: rgb(255, 129, 57);
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.heading-contact::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 56px;
+    height: 2px;
+}
+
+.form-origin{
+    width: 100%;
+    height: 480px;
+    background-color: rgb(42, 41, 41);
+    padding: 50px 30px;
+    border-radius: 8px;
+}
+
+.form-origin input{
+    color: #777 !important;
+    font-size: 14px;
+    border: 1px solid #e4e3e3;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 16px 22px;
+    margin-bottom: 40px;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.874) !important;
+}
+
+.form-origin textarea{
+    height: 200px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #777;
+}
+
+.btn-contact{
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background-color: #f4813f;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0px;
+    border: 2px solid rgb(255, 129, 57);
+}
+
+.content-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 8px 18px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.heading-content{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.heading-content span{
+    color: rgb(255, 129, 57);
+}
+
+.para-content{
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.918);
+    margin: 16px 0px;
+}
+
+footer{
+    background-color: rgb(4, 4, 4);
+    margin: 0px 0px !important;
+    height: 10vh;
+    margin-top: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para-footer{
+    margin: 0px 0px;
 }
